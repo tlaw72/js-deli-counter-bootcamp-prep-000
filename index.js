@@ -23,8 +23,9 @@ function currentLine (katzDeliLine) {
      let newArray = [];
     for (let i = 1; i<katzDeliLine.length + 1; i++) {
          newArray.push(`${i}. ${katzDeliLine[i-1]}`);
+         
     }
-    return `The line is currently: ${newArray}`;
+    return `The line is currently: ${newArray.join(' ')}`;
   } else { 
     return `The line is currently empty.`;
   }
