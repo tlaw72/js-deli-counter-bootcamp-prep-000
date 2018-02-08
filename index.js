@@ -22,7 +22,7 @@ function currentLine (katzDeliLine) {
   if (katzDeliLine.length>0) {
      let newArray = [];
     for (let i = 1; i<katzDeliLine.length + 1; i++){
-         newArray.push(`${i}. ${katzDeliLine[i-1]}`);
+         newArray.push(`${i}. ${katzDeliLine[i-1]} `);
     }
     return `The line is currently: ${newArray}`;
   } else { 
